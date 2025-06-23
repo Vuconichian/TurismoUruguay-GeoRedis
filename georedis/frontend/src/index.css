@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  font-size: 16px; /* Base font size más grande */
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Hacer todo más grande por defecto */
+.text-base {
+  font-size: 1.125rem !important; /* 18px en lugar de 16px */
+}
+
+.text-sm {
+  font-size: 1rem !important; /* 16px en lugar de 14px */
+}
+
+.text-lg {
+  font-size: 1.25rem !important; /* 20px en lugar de 18px */
+}
+
+.text-xl {
+  font-size: 1.5rem !important; /* 24px en lugar de 20px */
+}
+
+.text-2xl {
+  font-size: 2rem !important; /* 32px en lugar de 24px */
+}
+
+.text-3xl {
+  font-size: 2.5rem !important; /* 40px en lugar de 30px */
+}
+
+.text-4xl {
+  font-size: 3rem !important; /* 48px en lugar de 36px */
+}
+
+.text-6xl {
+  font-size: 4.5rem !important; /* 72px en lugar de 60px */
+}
+
+/* Botones más grandes */
+button {
+  font-size: 1.125rem !important; /* 18px */
+  padding: 0.875rem 1.5rem !important; /* py-3.5 px-6 */
+  min-height: 48px;
+}
+
+/* Inputs más grandes */
+input,
+select,
+textarea {
+  font-size: 1.125rem !important; /* 18px */
+  padding: 1rem !important; /* p-4 */
+  min-height: 48px;
+}
+
+/* Labels más grandes */
+label {
+  font-size: 1.125rem !important; /* 18px */
+  font-weight: 600 !important;
+}
+
+/* Custom marker styles */
+.custom-user-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-location-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Leaflet popup customization */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.125rem !important; /* 18px */
+}
+
+/* Asegurar que los gradientes funcionen */
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-blue-50 {
+  --tw-gradient-from: #eff6ff;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(239, 246, 255, 0));
+}
+
+.to-purple-50 {
+  --tw-gradient-to: #faf5ff;
+}
+
+/* Colores de respaldo si Tailwind no carga */
+.bg-white {
+  background-color: white;
+}
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+.bg-green-500 {
+  background-color: #10b981;
+}
+.bg-red-500 {
+  background-color: #ef4444;
+}
+.text-white {
+  color: white;
+}
+.text-gray-800 {
+  color: #1f2937;
+}
+.text-blue-600 {
+  color: #2563eb;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.p-4 {
+  padding: 1.5rem; /* Más padding */
+}
+.p-6 {
+  padding: 2rem; /* Más padding */
+}
+.mb-4 {
+  margin-bottom: 1.5rem; /* Más margen */
+}
+.mt-4 {
+  margin-top: 1.5rem; /* Más margen */
+}
+
+/* Hacer las tarjetas más espaciosas */
+.card-spacing {
+  padding: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Iconos más grandes */
+.icon-large {
+  font-size: 2rem !important;
+}

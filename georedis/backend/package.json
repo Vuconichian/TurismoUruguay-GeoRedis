@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "API de puntos de interés turísticos para Concepción del Uruguay",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "dev:watch": "nodemon index.js",
+    "test": "node -e \"console.log('Testing server...'); require('./index.js')\"",
+    "install-dev": "npm install nodemon --save-dev"
+  },
+  "keywords": ["redis", "geolocation", "tourism", "api"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "redis": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
